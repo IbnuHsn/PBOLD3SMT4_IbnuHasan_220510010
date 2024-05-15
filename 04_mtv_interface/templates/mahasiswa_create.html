@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Mahasiswa</title>
+    <link rel="stylesheet" href="/static/style.css"  />
+
+</head>
+<body>
+    <h3>Tambah Mahasiswa</h3>
+    <a href="/mahasiswa">Kembali</a><br><br>
+    <form action="/mahasiswa/store" method="POST">
+        <label for="nim">NIM: </label><br>
+        <input type="text" id="nim" name="nim" required><br> 
+        <label for="nama">Nama: </label><br>
+        <input type="text" id="nama" name="nama" required><br>
+        <label for="nama">Prodi: </label><br>
+        <input type="text" id="prodi" name="prodi" required><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
