@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Object</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>Object Mahasiswa</h1>
+    <table>
+            <thead>
+                <tr>
+                    <th>Nim</th>
+                    <th>Nama</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for row in mhs %}
+            <tr>
+                <td>{{ row.nim }}</td>
+                <td>{{ row.nama }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</html>
+
+</head>
+<body>
+    <h1>Object Dosen</h1>
+    <table>
+            <thead>
+                <tr>
+                    <th>Nidn</th>
+                    <th>Nama</th>
+                    <th>Spesialis</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for row in dsn %}
+            <tr>
+                <td>{{ row.nidn }}</td>
+                <td>{{ row.nama }}</td>
+                <td>{{ row.spesialis }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</html>
