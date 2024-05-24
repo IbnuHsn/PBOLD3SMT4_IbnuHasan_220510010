@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Matakuliah</title>
+    <link rel="stylesheet" href="/static/style.css"  />
+
+</head>
+<body>
+    <h3>Tambah Matakuliah</h3>
+    <a href="/matakuliah">Kembali</a><br><br>
+    <form action="/matakuliah/store" method="POST">
+        <label for="kodematakuliah">Kodematakuliah: </label><br>
+        <input type="text" id="kodematakuliah" name="kodematakuliah" required><br> 
+        <label for="matakuliah">Matakuliah: </label><br>
+        <input type="text" id="matakuliah" name="matakuliah" required><br>
+        <label for="dosen">Dosen: </label><br>
+        <input type="text" id="dosen" name="dosen" required><br>
+        <label for="jumlahsks">Jumlahsks: </label><br>
+        <input type="text" id="jumlahsks" name="jumlahsks" required><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

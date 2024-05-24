@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Matakuliah</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h3>Edit Matakuliah</h3>
+    <a href="/matakuliah">Kembali</a><br><br>
+    <form action="/matakuliah/update/{{ obj.id }}" method="POST">
+        <label for="kodematakuliah">Kodematakuliah:</label><br>
+        <input type="text" id="kodematakuliah" name="kodematakuliah" required value="{{ obj.kodematakuliah }}"><br>
+        <label for="matakuliah">Matakuliah:</label><br>
+        <input type="text" id="matakuliah" name="matakuliah" required value="{{ obj.matakuliah }}"><br>
+        <label for="dosen">Dosen:</label><br>
+        <input type="text" id="dosen" name="dosen" required value="{{ obj.dosen }}"><br>
+        <label for="jumlahsks">Jumlahsks:</label><br>
+        <input type="text" id="jumlahsks" name="jumlahsks" required value="{{ obj.jumlahsks }}"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
